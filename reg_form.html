@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<Html>
+	<head>
+		<title>Reg_Form</title>
+		<link rel="stylesheet" type="text/css" href="reg.css">
+	</head>
+	<body>
+		<div class="reg_box">
+			<h1>STUDENT REGISTRATION</h1>
+			<form>
+				<fieldset>
+					<legend><strong>Name:</strong></legend>
+					<table>	
+						
+						<tr><td>FIRST_NAME:</td><td><input type="text" name="FIRST_NAME:"></td></tr><br>
+						<tr><td>LAST_NAME:</td><td><input type="text" name="LAST_NAME:"></td></tr><br>
+
+						<tr><td>Title:</td><td>
+						<select>
+							<option value="select">select</option>
+							<option value="web_developer">web_developer</option>
+							<option value="s/w_developer">s/w_developer</option>
+							<option value="app_developer">app_developer</option>
+						</select></td></tr><br>
+					</table>
+				</fieldset>	
+
+				<div class="dob">
+				<table>
+					<tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr></br>
+				</table>
+				</div>
+
+				<fieldset>
+					<legend><strong>Methods of Payament:</strong></legend>	
+					<table>
+						
+						<tr><td>Credit Card:<input type="radio" name="Payament" value="Credit">
+						Debit Card:<input type="radio" name="Payament" value="Debit">
+						Paypal:<input type="radio" name="Payament" value="pay"></td></tr></br>
+					</table>
+				</fieldset>
+
+				<fieldset>	
+					<legend><strong>Languages:</strong></legend></br>
+					<table>
+						
+						<tr><td>C:<input type="checkbox" name="Language" value="c">
+						C++:<input type="checkbox" name="Language" value="c++">
+						JavaScript:<input type="checkbox" name="Language" value="JavaScript">
+						Android:<input type="checkbox" name="Language" value="Android"></td></tr></br>
+					</table>
+				</fieldset>
+
+				<fieldset>
+					<legend><strong>Year of Programming:</strong></legend></br>
+					<table>
+						
+						<tr><td>Years:<input type="number" id="TextInput" value="Years"> or Use Range:<input type="range" name="rangeInput" min="0" max="20" onchange="updateTextInput(this.value);">20</td></tr>
+					</table>
+				</fieldset>
+
+				<fieldset>
+				<legend><strong>Contacts:</strong></legend></br>
+					<table>
+						
+						<tr><td>Mobile:</td><td><input type="tel" name="Mobile"></td></tr></br>
+						<tr><td>e-mail:</td><td><input type="email" name="e-mail"></td></tr></br>
+						<tr><td>website:</td><td><input type="url" name="website"></td></tr></br>
+					</table>
+				</fieldset>
+
+				<fieldset>
+					<legend><strong>Comments:</strong></legend></br>
+					<table>
+						
+						<tr><td><textarea>your comments...</textarea></td></tr></br>
+					</table>
+				</fieldset>
+
+				<button>
+					<table>
+						<input type="submit" name="submit"></br>
+					</table>
+				</button>
+			</form>
+		</div>
+	</body>
+</Html>
